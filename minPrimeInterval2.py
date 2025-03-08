@@ -10,9 +10,9 @@ def solve(pairs, left, right):
     return [-1, -1]
 
 def trim_list(primes, left, right):
-    start = bisect.bisect_left(primes, left)  # Find the first index >= a
-    end = bisect.bisect_right(primes, right)   # Find the first index > b
-    return primes[start:end]  # Slice the list to include only values in range
+    start = bisect.bisect_left(primes, left)  
+    end = bisect.bisect_right(primes, right)  
+    return primes[start:end]  
 
 
 if __name__ == "__main__":
